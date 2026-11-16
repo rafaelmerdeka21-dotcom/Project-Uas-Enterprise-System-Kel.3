@@ -1,12 +1,20 @@
 {
   "version": 2,
+  "framework": "other",
   "outputDirectory": "public",
-  "framework": null,
-  "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.7.3"
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.php"
     }
-  },
+  ],
+  "builds": [
+    {
+      "src": "public/index.php",
+      "use": "@vercel/php",
+      "config": { "runtime": "php-8.3" }
+    }
+  ],
   "routes": [
     {
       "src": "/build/(.*)",
