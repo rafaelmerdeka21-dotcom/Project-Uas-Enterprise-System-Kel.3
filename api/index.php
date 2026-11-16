@@ -41,4 +41,4 @@ foreach ([
 }
 
 // ── 5. Autoload & jalankan Laravel ──────────────────────────
-require $projectRoot . '/public/index.php';
+require __DIR__ . '/../public/index.php';
