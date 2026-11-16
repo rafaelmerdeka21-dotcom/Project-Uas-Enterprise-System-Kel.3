@@ -1,0 +1,78 @@
+##############################################
+#  Laravel — .gitignore
+#  Semua file sensitif & generated TIDAK di-commit
+##############################################
+
+# ── Logs ─────────────────────────────────────
+*.log
+
+# ── OS / Editor files ────────────────────────
+.DS_Store
+Thumbs.db
+.claude
+.mcp.json
+
+# ── IDE / Editor configs ─────────────────────
+/.idea
+/.vscode
+/.zed
+/.nova
+/.cursor/
+/.codex
+.phpactor.json
+_ide_helper.php
+
+# ── ENVIRONMENT & SECRETS (JANGAN PERNAH DI-COMMIT!) ──────
+# File .env mengandung: APP_KEY, DB password, API keys, dll.
+.env
+.env.*
+!.env.example
+
+# Auth credentials Composer
+/auth.json
+
+# ── Vercel secrets ──────────────────────────
+# Jangan simpan vercel token di repo
+.vercel
+
+# ── PHP / Composer ────────────────────────────
+/vendor
+.phpunit.result.cache
+/.phpunit.cache
+/phpunit.result.cache
+
+# ── Node / npm ────────────────────────────────
+/node_modules
+
+# ── Laravel generated / runtime files ────────
+/bootstrap/cache/*.php
+/public/build
+/public/fonts-manifest.dev.json
+/public/hot
+/public/storage
+
+# Storage runtime (logs, sessions, views cache, file cache)
+/storage/*.key
+/storage/pail
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+
+# Tapi JAGA struktur direktorinya agar tetap ada di git
+!/storage/framework/cache/data/.gitkeep
+!/storage/framework/sessions/.gitkeep
+!/storage/framework/views/.gitkeep
+!/storage/logs/.gitkeep
+!/storage/app/public/.gitkeep
+
+# ── Upload produk (gambar): SERTAKAN ke git ───
+# SVG produk sengaja di-commit karena bagian dari seed
+# Jika pakai S3/cloud storage, tambahkan: /public/uploads
+
+# ── Homestead (tidak dipakai) ─────────────────
+Homestead.json
+Homestead.yaml
+
+# ── Build tool ────────────────────────────────
+.npmrc

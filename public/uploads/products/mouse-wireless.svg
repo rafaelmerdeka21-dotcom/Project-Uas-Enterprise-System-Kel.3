@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="mouseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="24" fill="url(#bgM)"/>
+  <rect x="130" y="70" width="140" height="250" rx="70" fill="url(#mouseGrad)" stroke="#818cf8" stroke-width="4"/>
+  <line x1="200" y1="70" x2="200" y2="150" stroke="#818cf8" stroke-width="3"/>
+  <rect x="188" y="100" width="24" height="45" rx="12" fill="#c7d2fe" stroke="#4f46e5" stroke-width="2"/>
+  <circle cx="200" cy="240" r="16" fill="#818cf8" opacity="0.3"/>
+  <path d="M190 270 Q200 280 210 270" stroke="#c7d2fe" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Wireless signal waves -->
+  <path d="M185 45 Q200 35 215 45" stroke="#818cf8" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M175 35 Q200 20 225 35" stroke="#818cf8" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <text x="200" y="360" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#a5b4fc" text-anchor="middle">WIRELESS 2.4GHz</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#27272a"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="24" fill="url(#bgL)"/>
+  <!-- Light cone glow -->
+  <polygon points="210,135 110,320 290,320" fill="url(#glowGrad)"/>
+  <!-- Lamp base -->
+  <ellipse cx="200" cy="320" rx="55" ry="14" fill="#52525b" stroke="#71717a" stroke-width="3"/>
+  <circle cx="200" cy="318" r="6" fill="#6366f1"/>
+  <!-- Lamp stem / arm -->
+  <path d="M200 315 L200 210 Q200 160 230 145" stroke="#a1a1aa" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Lamp head / shade -->
+  <path d="M190 145 L250 125 L240 145 Z" fill="#d4d4d8"/>
+  <rect x="180" y="130" width="70" height="15" rx="7" transform="rotate(-15 215 137)" fill="#fbbf24" stroke="#fef08a" stroke-width="2"/>
+  <text x="200" y="370" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#fde047" text-anchor="middle">SMART LED TOUCH</text>
+</svg>
